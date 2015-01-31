@@ -33,7 +33,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H5b-MS-pbO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wCl-VF-UuE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wCl-VF-UuE">
+                            <connections>
+                                <segue destination="hn8-z7-0HE" kind="show" id="L0Z-Mw-zpm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -44,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1933.5" y="367.5"/>
+            <point key="canvasLocation" x="1933.5" y="333.5"/>
         </scene>
         <!--Events-->
         <scene sceneID="6MW-R5-lct">
