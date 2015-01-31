@@ -67,7 +67,7 @@
                             <outlet property="delegate" destination="Dti-ih-5SA" id="cY6-bO-6Fc"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Events" id="F0e-29-bFH"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="newestTent28by35.png" id="F0e-29-bFH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="eventList" destination="OK8-VE-6GX" id="GtL-Kc-693"/>
@@ -156,17 +156,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="hcT-UH-YGg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="hcT-UH-YGg">
                                 <rect key="frame" x="16" y="79" width="338" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="xK1-rk-zLV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="xK1-rk-zLV">
                                 <rect key="frame" x="16" y="123" width="338" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-Im-5Jx">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-Im-5Jx">
                                 <rect key="frame" x="137" y="493" width="96" height="30"/>
                                 <state key="normal" title="Add My Event">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,7 +175,7 @@
                                     <action selector="addEventPressed:" destination="hn8-z7-0HE" eventType="touchUpInside" id="6KR-lT-MCm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecJ-Lp-X8A">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Start Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecJ-Lp-X8A">
                                 <rect key="frame" x="16" y="265" width="78" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6A2-xJ-CbA"/>
@@ -184,7 +184,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIn-ZA-L9W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Public?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIn-ZA-L9W">
                                 <rect key="frame" x="16" y="185" width="58" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="58" id="B1E-PL-Jh6"/>
@@ -193,10 +193,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="il1-Vy-1va">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="il1-Vy-1va">
                                 <rect key="frame" x="82" y="180" width="51" height="31"/>
                             </switch>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="QvX-qe-wbI">
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="QvX-qe-wbI">
                                 <rect key="frame" x="0.0" y="294" width="375" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="444426926.50914198">
                                     <!--2015-01-31 19:55:26 +0000-->
@@ -231,7 +231,6 @@
             </objects>
             <point key="canvasLocation" x="1933.5" y="1128.5"/>
         </scene>
->>>>>>> new-event
         <!--Register View Controller-->
         <scene sceneID="SX2-mR-Yhh">
             <objects>
@@ -350,5 +349,6 @@
     </scenes>
     <resources>
         <image name="mapicon.png" width="35" height="34"/>
+        <image name="newestTent28by35.png" width="28" height="35"/>
     </resources>
 </document>
