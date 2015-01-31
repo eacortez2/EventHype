@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583DE1A7C97CC00E21648 /* Firebase.framework */; };
+		891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E01A7C97F000E21648 /* libicucore.dylib */; };
+		891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E21A7C97F900E21648 /* libc++.dylib */; };
+		891583E51A7C980100E21648 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E41A7C980100E21648 /* CFNetwork.framework */; };
+		891583E71A7C980800E21648 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E61A7C980800E21648 /* Security.framework */; };
+		891583E91A7C981400E21648 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E81A7C981400E21648 /* SystemConfiguration.framework */; };
 		89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */; };
 		89551FC01A7C35C500F50FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBF1A7C35C500F50FF0 /* ViewController.swift */; };
 		89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89551FC11A7C35C500F50FF0 /* Main.storyboard */; };
@@ -26,6 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		891583DE1A7C97CC00E21648 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		891583E01A7C97F000E21648 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		891583E21A7C97F900E21648 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		891583E41A7C980100E21648 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		891583E61A7C980800E21648 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		891583E81A7C981400E21648 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		891583EA1A7C983E00E21648 /* EventHype-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventHype-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		89551FB81A7C35C500F50FF0 /* EventHype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89551FBC1A7C35C500F50FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +56,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891583E91A7C981400E21648 /* SystemConfiguration.framework in Frameworks */,
+				891583E71A7C980800E21648 /* Security.framework in Frameworks */,
+				891583E51A7C980100E21648 /* CFNetwork.framework in Frameworks */,
+				891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */,
+				891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */,
+				891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +78,12 @@
 		89551FAF1A7C35C500F50FF0 = {
 			isa = PBXGroup;
 			children = (
+				891583E81A7C981400E21648 /* SystemConfiguration.framework */,
+				891583E61A7C980800E21648 /* Security.framework */,
+				891583E41A7C980100E21648 /* CFNetwork.framework */,
+				891583E21A7C97F900E21648 /* libc++.dylib */,
+				891583E01A7C97F000E21648 /* libicucore.dylib */,
+				891583DE1A7C97CC00E21648 /* Firebase.framework */,
 				89551FBA1A7C35C500F50FF0 /* EventHype */,
 				89551FD01A7C35C500F50FF0 /* EventHypeTests */,
 				89551FB91A7C35C500F50FF0 /* Products */,
@@ -90,6 +115,7 @@
 		89551FBB1A7C35C500F50FF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				891583EA1A7C983E00E21648 /* EventHype-Bridging-Header.h */,
 				89551FBC1A7C35C500F50FF0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -336,9 +362,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = EventHype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EventHype-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +380,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = EventHype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EventHype-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +446,7 @@
 				89551FD91A7C35C500F50FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89551FDA1A7C35C500F50FF0 /* Build configuration list for PBXNativeTarget "EventHypeTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +455,7 @@
 				89551FDC1A7C35C500F50FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
