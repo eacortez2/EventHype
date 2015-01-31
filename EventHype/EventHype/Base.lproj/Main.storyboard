@@ -67,7 +67,7 @@
                             <outlet property="delegate" destination="Dti-ih-5SA" id="cY6-bO-6Fc"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Events" id="F0e-29-bFH"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="newestTent28by35.png" id="F0e-29-bFH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="eventList" destination="OK8-VE-6GX" id="GtL-Kc-693"/>
@@ -262,5 +262,6 @@
     </scenes>
     <resources>
         <image name="mapicon.png" width="35" height="34"/>
+        <image name="newestTent28by35.png" width="28" height="35"/>
     </resources>
 </document>
