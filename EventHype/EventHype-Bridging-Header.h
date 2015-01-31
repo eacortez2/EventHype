@@ -3,4 +3,4 @@
 //
 
 #import<Firebase/Firebase.h>
-#import<GeoFIre/GeoFire.h>
+#import<GeoFire/GeoFire.h>
