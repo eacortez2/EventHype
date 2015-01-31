@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7425E1AB1A7CA39200898193 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7425E1AA1A7CA39200898193 /* CameraViewController.swift */; };
 		891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583DE1A7C97CC00E21648 /* Firebase.framework */; };
 		891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E01A7C97F000E21648 /* libicucore.dylib */; };
 		891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E21A7C97F900E21648 /* libc++.dylib */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7425E1AA1A7CA39200898193 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		891583DE1A7C97CC00E21648 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		891583E01A7C97F000E21648 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		891583E21A7C97F900E21648 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -102,6 +104,7 @@
 		89551FBA1A7C35C500F50FF0 /* EventHype */ = {
 			isa = PBXGroup;
 			children = (
+				7425E1AA1A7CA39200898193 /* CameraViewController.swift */,
 				89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */,
 				89551FBF1A7C35C500F50FF0 /* ViewController.swift */,
 				89551FC11A7C35C500F50FF0 /* Main.storyboard */,
@@ -240,6 +243,7 @@
 			files = (
 				89551FC01A7C35C500F50FF0 /* ViewController.swift in Sources */,
 				89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */,
+				7425E1AB1A7CA39200898193 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
