@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		128786C7FD7BC24E8BD477EB /* libPods-EventHype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEC4D0ED818AC288A61C152 /* libPods-EventHype.a */; };
 		7425E1AB1A7CA39200898193 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7425E1AA1A7CA39200898193 /* CameraViewController.swift */; };
 		891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583DE1A7C97CC00E21648 /* Firebase.framework */; };
 		891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E01A7C97F000E21648 /* libicucore.dylib */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C68BAB7AC11DC49EA7B9F29 /* Pods-EventHype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventHype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventHype/Pods-EventHype.debug.xcconfig"; sourceTree = "<group>"; };
+		61430754D5EC98D5558C65E7 /* Pods-EventHype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventHype.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventHype/Pods-EventHype.release.xcconfig"; sourceTree = "<group>"; };
 		7425E1AA1A7CA39200898193 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		891583DE1A7C97CC00E21648 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		891583E01A7C97F000E21648 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -51,6 +54,7 @@
 		89551FCD1A7C35C500F50FF0 /* EventHypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventHypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89551FD21A7C35C500F50FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89551FD31A7C35C500F50FF0 /* EventHypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHypeTests.swift; sourceTree = "<group>"; };
+		CDEC4D0ED818AC288A61C152 /* libPods-EventHype.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EventHype.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */,
 				891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */,
 				891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */,
+				128786C7FD7BC24E8BD477EB /* libPods-EventHype.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		627A545BA0527F3ECAEC4BEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDEC4D0ED818AC288A61C152 /* libPods-EventHype.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89551FAF1A7C35C500F50FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,8 @@
 				89551FBA1A7C35C500F50FF0 /* EventHype */,
 				89551FD01A7C35C500F50FF0 /* EventHypeTests */,
 				89551FB91A7C35C500F50FF0 /* Products */,
+				E4980D7EBAACE6577F4360BA /* Pods */,
+				627A545BA0527F3ECAEC4BEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +156,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4980D7EBAACE6577F4360BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C68BAB7AC11DC49EA7B9F29 /* Pods-EventHype.debug.xcconfig */,
+				61430754D5EC98D5558C65E7 /* Pods-EventHype.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89551FD71A7C35C500F50FF0 /* Build configuration list for PBXNativeTarget "EventHype" */;
 			buildPhases = (
+				59DCEBF22782565397CC3FDC /* Check Pods Manifest.lock */,
 				89551FB41A7C35C500F50FF0 /* Sources */,
 				89551FB51A7C35C500F50FF0 /* Frameworks */,
 				89551FB61A7C35C500F50FF0 /* Resources */,
+				CAA503E73C03B7414F043456 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +261,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59DCEBF22782565397CC3FDC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAA503E73C03B7414F043456 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventHype/Pods-EventHype-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89551FB41A7C35C500F50FF0 /* Sources */ = {
@@ -364,6 +423,7 @@
 		};
 		89551FD81A7C35C500F50FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C68BAB7AC11DC49EA7B9F29 /* Pods-EventHype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -373,7 +433,6 @@
 				);
 				INFOPLIST_FILE = EventHype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EventHype-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -382,6 +441,7 @@
 		};
 		89551FD91A7C35C500F50FF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61430754D5EC98D5558C65E7 /* Pods-EventHype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -391,7 +451,6 @@
 				);
 				INFOPLIST_FILE = EventHype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EventHype-Bridging-Header.h";
 			};

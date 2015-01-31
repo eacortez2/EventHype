@@ -1,0 +1,10 @@
+PODS:
+  - HeyWatch (2.0.0)
+
+DEPENDENCIES:
+  - HeyWatch
+
+SPEC CHECKSUMS:
+  HeyWatch: 667dae3b5ba3b763120f4963424782a94ce1ea51
+
+COCOAPODS: 0.36.0.beta.2
