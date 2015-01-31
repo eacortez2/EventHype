@@ -57,11 +57,15 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         var theRegion: MKCoordinateRegion = MKCoordinateRegionMake(usersLocation, theSpan)
         
         self.theMapView.setRegion(theRegion, animated: true)
-        
-        
-        
-        
-        
+//        myRootRef.observeEventType(.ChildAdded, withBlock: { snapshot in
+//            var lat: AnyObject? = snapshot.value.objectForKey("latitude")
+//            var lon: AnyObject? = snapshot.value.objectForKey("longitude")
+//            var location = CLLocationCoordinate2D(latitude: lat as Double, longitude: lon as Double)
+//            let annotation = MKPointAnnotation()
+//            annotation.setCoordinate(location)
+//            annotation.title = "test"
+//            self.theMapView.addAnnotation(annotation)
+    //})
         
     }
     override func viewDidAppear(animated: Bool) {
