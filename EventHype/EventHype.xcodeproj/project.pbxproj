@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		749109B11A7CCB0F00C2D332 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109B01A7CCB0F00C2D332 /* CoreLocation.framework */; };
 		74C98CD41A7D33A3005E54D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C98CD31A7D33A3005E54D8 /* MapKit.framework */; };
+		74C98CD61A7D4E36005E54D8 /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C98CD51A7D4E36005E54D8 /* NewEventViewController.swift */; };
+		74C98CD81A7D6732005E54D8 /* UIDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C98CD71A7D6732005E54D8 /* UIDatePickerViewController.swift */; };
 		891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583DE1A7C97CC00E21648 /* Firebase.framework */; };
 		891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E01A7C97F000E21648 /* libicucore.dylib */; };
 		891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E21A7C97F900E21648 /* libc++.dylib */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		749109B01A7CCB0F00C2D332 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		74C98CD31A7D33A3005E54D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		74C98CD51A7D4E36005E54D8 /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
+		74C98CD71A7D6732005E54D8 /* UIDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDatePickerViewController.swift; sourceTree = "<group>"; };
 		891583DE1A7C97CC00E21648 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		891583E01A7C97F000E21648 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		891583E21A7C97F900E21648 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -136,6 +140,7 @@
 		89551FBA1A7C35C500F50FF0 /* EventHype */ = {
 			isa = PBXGroup;
 			children = (
+				74C98CD71A7D6732005E54D8 /* UIDatePickerViewController.swift */,
 				891584071A7D32CF00E21648 /* logobetter.png */,
 				891584011A7CC39D00E21648 /* Logo.png */,
 				891583FF1A7CBD9400E21648 /* loginbg.jpg */,
@@ -147,6 +152,7 @@
 				891583F61A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg */,
 				89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */,
 				89551FBF1A7C35C500F50FF0 /* RootViewController.swift */,
+				74C98CD51A7D4E36005E54D8 /* NewEventViewController.swift */,
 				89551FC11A7C35C500F50FF0 /* Main.storyboard */,
 				891583EF1A7CA33300E21648 /* RegisterViewController.swift */,
 				891583ED1A7CA1D300E21648 /* LoginViewController.swift */,
@@ -294,7 +300,9 @@
 			files = (
 				891583EE1A7CA1D300E21648 /* LoginViewController.swift in Sources */,
 				89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */,
+				74C98CD61A7D4E36005E54D8 /* NewEventViewController.swift in Sources */,
 				89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */,
+				74C98CD81A7D6732005E54D8 /* UIDatePickerViewController.swift in Sources */,
 				891583F01A7CA33300E21648 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
