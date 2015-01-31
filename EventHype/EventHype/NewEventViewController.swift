@@ -27,7 +27,7 @@ class NewEventViewController: UIViewController{
     @IBAction func addEventPressed(sender: AnyObject) {
         
         
-    }
+        ()}
 }
 
 
