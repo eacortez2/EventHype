@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		749109B11A7CCB0F00C2D332 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109B01A7CCB0F00C2D332 /* CoreLocation.framework */; };
+		749109B31A7CCB4400C2D332 /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109B21A7CCB4400C2D332 /* GeoFire.framework */; };
 		891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583DE1A7C97CC00E21648 /* Firebase.framework */; };
 		891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E01A7C97F000E21648 /* libicucore.dylib */; };
 		891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E21A7C97F900E21648 /* libc++.dylib */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		749109B01A7CCB0F00C2D332 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		749109B21A7CCB4400C2D332 /* GeoFire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeoFire.framework; path = ../../../../Downloads/GeoFire.framework; sourceTree = "<group>"; };
 		891583DE1A7C97CC00E21648 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		891583E01A7C97F000E21648 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		891583E21A7C97F900E21648 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -76,12 +80,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749109B11A7CCB0F00C2D332 /* CoreLocation.framework in Frameworks */,
 				891583E91A7C981400E21648 /* SystemConfiguration.framework in Frameworks */,
 				891583E71A7C980800E21648 /* Security.framework in Frameworks */,
 				891583E51A7C980100E21648 /* CFNetwork.framework in Frameworks */,
 				891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */,
 				891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */,
 				891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */,
+				749109B31A7CCB4400C2D332 /* GeoFire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,8 @@
 		89551FAF1A7C35C500F50FF0 = {
 			isa = PBXGroup;
 			children = (
+				749109B21A7CCB4400C2D332 /* GeoFire.framework */,
+				749109B01A7CCB0F00C2D332 /* CoreLocation.framework */,
 				891583E81A7C981400E21648 /* SystemConfiguration.framework */,
 				891583E61A7C980800E21648 /* Security.framework */,
 				891583E41A7C980100E21648 /* CFNetwork.framework */,
@@ -406,6 +414,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/Turbs/Downloads,
 				);
 				INFOPLIST_FILE = EventHype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -424,6 +433,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/Turbs/Downloads,
 				);
 				INFOPLIST_FILE = EventHype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
