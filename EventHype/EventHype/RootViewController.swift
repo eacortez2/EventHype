@@ -21,6 +21,7 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "registerView@2x.jpg")!)
         
         //getting the user's location
