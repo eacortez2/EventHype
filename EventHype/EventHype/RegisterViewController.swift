@@ -14,15 +14,26 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     
+    @IBOutlet weak var behindLogin: UIImageView!
     var myRootRef = Firebase(url:"https://eventhype.firebaseio.com")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "registerView@2x.jpg")!)
-        registerButton.layer.cornerRadius = 15
+        //registerButton.layer.cornerRadius = 15
         emailTextField.delegate=self
         passwordTextField.delegate=self
         confirmPasswordTextField.delegate=self
+        var image = UIImage(named: "loginbg.jpg")
+        behindLogin.image = image
+        emailTextField.textColor = UIColor.whiteColor()
+        passwordTextField.textColor = UIColor.whiteColor()
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
+            attributes:[NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "HelveticaNeue-Thin", size: 20)!])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password",
+            attributes:[NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "HelveticaNeue-Thin", size: 20)!])
+        confirmPasswordTextField.attributedPlaceholder = NSAttributedString(string: "Re-Type Password",
+            attributes:[NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "HelveticaNeue-Thin", size: 20)!])
     }
     
     override func didReceiveMemoryWarning() {

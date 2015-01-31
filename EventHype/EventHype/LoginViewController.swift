@@ -26,7 +26,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailTextField.delegate=self
         passwordTextField.delegate=self
         var image = UIImage(named: "loginbg.jpg")
-        var logo = UIImage(named: "Logo.png")
+        var logo = UIImage(named: "logobetter.png")
         eventHypeImageView.image = logo
         loginBGImage.image = image
         emailTextField.textColor = UIColor.whiteColor()

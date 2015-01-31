@@ -23,6 +23,7 @@
 		891583FC1A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 891583F61A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg */; };
 		891584001A7CBD9400E21648 /* loginbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 891583FF1A7CBD9400E21648 /* loginbg.jpg */; };
 		891584021A7CC39D00E21648 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 891584011A7CC39D00E21648 /* Logo.png */; };
+		891584081A7D32CF00E21648 /* logobetter.png in Resources */ = {isa = PBXBuildFile; fileRef = 891584071A7D32CF00E21648 /* logobetter.png */; };
 		89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */; };
 		89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBF1A7C35C500F50FF0 /* RootViewController.swift */; };
 		89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89551FC11A7C35C500F50FF0 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		891583F61A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3 - Pcap0hn@3x.jpg"; sourceTree = "<group>"; };
 		891583FF1A7CBD9400E21648 /* loginbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginbg.jpg; sourceTree = "<group>"; };
 		891584011A7CC39D00E21648 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		891584071A7D32CF00E21648 /* logobetter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logobetter.png; sourceTree = "<group>"; };
 		89551FB81A7C35C500F50FF0 /* EventHype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89551FBC1A7C35C500F50FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		89551FBA1A7C35C500F50FF0 /* EventHype */ = {
 			isa = PBXGroup;
 			children = (
+				891584071A7D32CF00E21648 /* logobetter.png */,
 				891584011A7CC39D00E21648 /* Logo.png */,
 				891583FF1A7CBD9400E21648 /* loginbg.jpg */,
 				891583F11A7CA58000E21648 /* rootViewBG@2x.jpg */,
@@ -256,6 +259,7 @@
 				891583F91A7CA58000E21648 /* registerView@2x.jpg in Resources */,
 				891583F81A7CA58000E21648 /* rootViewBG@3x.jpg in Resources */,
 				891583FB1A7CA58000E21648 /* 3 - Pcap0hn@2x.jpg in Resources */,
+				891584081A7D32CF00E21648 /* logobetter.png in Resources */,
 				891583FC1A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg in Resources */,
 				891583F71A7CA58000E21648 /* rootViewBG@2x.jpg in Resources */,
 				89551FC51A7C35C500F50FF0 /* Images.xcassets in Resources */,
