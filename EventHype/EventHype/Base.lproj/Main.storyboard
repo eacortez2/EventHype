@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="58S-I4-TT9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="58S-I4-TT9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -16,22 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvV-ZN-JEI">
-                                <rect key="frame" x="164" y="517" width="49" height="30"/>
-                                <state key="normal" title="Logout">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9dJ-qx-ob1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
                                 <connections>
-                                    <action selector="logoutButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wd3-om-WyL"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="coj-Nb-sc3"/>
                                 </connections>
-                            </button>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9dJ-qx-ob1" secondAttribute="trailing" id="HYt-Jd-6Mi"/>
+                            <constraint firstItem="9dJ-qx-ob1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dWP-C5-0Kb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9dJ-qx-ob1" secondAttribute="bottom" constant="-20" id="gBy-gs-zgE"/>
+                            <constraint firstItem="9dJ-qx-ob1" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="pX9-8g-woy"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="H5b-MS-pbO"/>
+                    <navigationItem key="navigationItem" id="H5b-MS-pbO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wCl-VF-UuE"/>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="theMapView" destination="9dJ-qx-ob1" id="NXU-YY-NfS"/>
                         <segue destination="YTP-ja-E1o" kind="presentation" identifier="gotoLogin" animates="NO" id="sDt-wC-fbp"/>
                     </connections>
                 </viewController>
