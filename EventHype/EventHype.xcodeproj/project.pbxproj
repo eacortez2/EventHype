@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		749109B11A7CCB0F00C2D332 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109B01A7CCB0F00C2D332 /* CoreLocation.framework */; };
+		74BEAF5D1A7D84DC00FED9CF /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BEAF5C1A7D84DC00FED9CF /* NewEventViewController.swift */; };
 		74C98CD41A7D33A3005E54D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C98CD31A7D33A3005E54D8 /* MapKit.framework */; };
 		891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583DE1A7C97CC00E21648 /* Firebase.framework */; };
 		891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E01A7C97F000E21648 /* libicucore.dylib */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		749109B01A7CCB0F00C2D332 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		74BEAF5C1A7D84DC00FED9CF /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
 		74C98CD31A7D33A3005E54D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		891583DE1A7C97CC00E21648 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		891583E01A7C97F000E21648 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -158,6 +160,7 @@
 				891583F61A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg */,
 				89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */,
 				89551FBF1A7C35C500F50FF0 /* RootViewController.swift */,
+				74BEAF5C1A7D84DC00FED9CF /* NewEventViewController.swift */,
 				89551FC11A7C35C500F50FF0 /* Main.storyboard */,
 				8915840B1A7D458C00E21648 /* eventList.swift */,
 				891583EF1A7CA33300E21648 /* RegisterViewController.swift */,
@@ -311,6 +314,7 @@
 				8915840C1A7D458C00E21648 /* eventList.swift in Sources */,
 				89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */,
 				89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */,
+				74BEAF5D1A7D84DC00FED9CF /* NewEventViewController.swift in Sources */,
 				891583F01A7CA33300E21648 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
