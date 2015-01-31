@@ -12,6 +12,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var loginBGImage: UIImageView!
     
+    @IBOutlet weak var eventHypeImageView: UIImageView!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var customSignInButton: UIButton!
@@ -20,11 +21,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "3 - Pcap0hn@2x.jpg")!)
-        customSignInButton.layer.cornerRadius = 27
+        //customSignInButton.layer.cornerRadius = 27
         emailTextField.text = ""
         emailTextField.delegate=self
         passwordTextField.delegate=self
         var image = UIImage(named: "loginbg.jpg")
+        var logo = UIImage(named: "Logo.png")
+        eventHypeImageView.image = logo
         loginBGImage.image = image
         emailTextField.textColor = UIColor.whiteColor()
         passwordTextField.textColor = UIColor.whiteColor()
