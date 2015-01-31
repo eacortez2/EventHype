@@ -31,6 +31,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginBGImage.image = image
         emailTextField.textColor = UIColor.whiteColor()
         passwordTextField.textColor = UIColor.whiteColor()
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
+            attributes:[NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "HelveticaNeue-Thin", size: 20)!])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password",
+            attributes:[NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "HelveticaNeue-Thin", size: 20)!])
     }
     
     override func didReceiveMemoryWarning() {
