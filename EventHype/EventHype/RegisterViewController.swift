@@ -18,7 +18,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "registerView@2x.jpg")!)
         registerButton.layer.cornerRadius = 15
         emailTextField.delegate=self
