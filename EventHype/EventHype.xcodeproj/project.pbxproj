@@ -27,6 +27,9 @@
 		891584021A7CC39D00E21648 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 891584011A7CC39D00E21648 /* Logo.png */; };
 		891584081A7D32CF00E21648 /* logobetter.png in Resources */ = {isa = PBXBuildFile; fileRef = 891584071A7D32CF00E21648 /* logobetter.png */; };
 		8915840A1A7D3F8400E21648 /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891584091A7D3F8400E21648 /* GeoFire.framework */; };
+		8915840C1A7D458C00E21648 /* eventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915840B1A7D458C00E21648 /* eventList.swift */; };
+		8915840E1A7D483000E21648 /* path7913.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915840D1A7D483000E21648 /* path7913.png */; };
+		891584101A7D48D800E21648 /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915840F1A7D48D800E21648 /* mapicon.png */; };
 		89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */; };
 		89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBF1A7C35C500F50FF0 /* RootViewController.swift */; };
 		89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89551FC11A7C35C500F50FF0 /* Main.storyboard */; };
@@ -67,6 +70,9 @@
 		891584011A7CC39D00E21648 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		891584071A7D32CF00E21648 /* logobetter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logobetter.png; sourceTree = "<group>"; };
 		891584091A7D3F8400E21648 /* GeoFire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoFire.framework; sourceTree = "<group>"; };
+		8915840B1A7D458C00E21648 /* eventList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventList.swift; sourceTree = "<group>"; };
+		8915840D1A7D483000E21648 /* path7913.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path7913.png; sourceTree = "<group>"; };
+		8915840F1A7D48D800E21648 /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
 		89551FB81A7C35C500F50FF0 /* EventHype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89551FBC1A7C35C500F50FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 		89551FBA1A7C35C500F50FF0 /* EventHype */ = {
 			isa = PBXGroup;
 			children = (
+				8915840F1A7D48D800E21648 /* mapicon.png */,
+				8915840D1A7D483000E21648 /* path7913.png */,
 				891584071A7D32CF00E21648 /* logobetter.png */,
 				891584011A7CC39D00E21648 /* Logo.png */,
 				891583FF1A7CBD9400E21648 /* loginbg.jpg */,
@@ -148,6 +156,7 @@
 				89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */,
 				89551FBF1A7C35C500F50FF0 /* RootViewController.swift */,
 				89551FC11A7C35C500F50FF0 /* Main.storyboard */,
+				8915840B1A7D458C00E21648 /* eventList.swift */,
 				891583EF1A7CA33300E21648 /* RegisterViewController.swift */,
 				891583ED1A7CA1D300E21648 /* LoginViewController.swift */,
 				89551FC41A7C35C500F50FF0 /* Images.xcassets */,
@@ -265,8 +274,10 @@
 			files = (
 				89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */,
 				891583FA1A7CA58000E21648 /* registerView@3x.jpg in Resources */,
+				8915840E1A7D483000E21648 /* path7913.png in Resources */,
 				891584001A7CBD9400E21648 /* loginbg.jpg in Resources */,
 				89551FC81A7C35C500F50FF0 /* LaunchScreen.xib in Resources */,
+				891584101A7D48D800E21648 /* mapicon.png in Resources */,
 				891584021A7CC39D00E21648 /* Logo.png in Resources */,
 				891583F91A7CA58000E21648 /* registerView@2x.jpg in Resources */,
 				891583F81A7CA58000E21648 /* rootViewBG@3x.jpg in Resources */,
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				891583EE1A7CA1D300E21648 /* LoginViewController.swift in Sources */,
+				8915840C1A7D458C00E21648 /* eventList.swift in Sources */,
 				89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */,
 				89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */,
 				891583F01A7CA33300E21648 /* RegisterViewController.swift in Sources */,
