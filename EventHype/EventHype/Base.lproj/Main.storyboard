@@ -69,6 +69,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Events" id="F0e-29-bFH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="eventList" destination="OK8-VE-6GX" id="GtL-Kc-693"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PO6-Ma-Xz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
