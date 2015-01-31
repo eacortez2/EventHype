@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		749109B11A7CCB0F00C2D332 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109B01A7CCB0F00C2D332 /* CoreLocation.framework */; };
 		749109B31A7CCB4400C2D332 /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109B21A7CCB4400C2D332 /* GeoFire.framework */; };
+		749109B71A7CCF5400C2D332 /* MapVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749109B61A7CCF5400C2D332 /* MapVIewController.swift */; };
+		749109BC1A7CD32400C2D332 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749109BA1A7CD32400C2D332 /* GoogleDataProvider.swift */; };
+		749109BD1A7CD32400C2D332 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749109BB1A7CD32400C2D332 /* GooglePlace.swift */; };
+		749109C11A7CD70500C2D332 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109C01A7CD70500C2D332 /* GoogleMaps.framework */; };
 		891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583DE1A7C97CC00E21648 /* Firebase.framework */; };
 		891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E01A7C97F000E21648 /* libicucore.dylib */; };
 		891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891583E21A7C97F900E21648 /* libc++.dylib */; };
@@ -46,6 +50,10 @@
 /* Begin PBXFileReference section */
 		749109B01A7CCB0F00C2D332 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		749109B21A7CCB4400C2D332 /* GeoFire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeoFire.framework; path = ../../../../Downloads/GeoFire.framework; sourceTree = "<group>"; };
+		749109B61A7CCF5400C2D332 /* MapVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVIewController.swift; sourceTree = "<group>"; };
+		749109BA1A7CD32400C2D332 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleDataProvider.swift; path = "../../../../../Downloads/Feed Me Starter/Feed Me/Model/GoogleDataProvider.swift"; sourceTree = "<group>"; };
+		749109BB1A7CD32400C2D332 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GooglePlace.swift; path = "../../../../../Downloads/Feed Me Starter/Feed Me/Model/GooglePlace.swift"; sourceTree = "<group>"; };
+		749109C01A7CD70500C2D332 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../../../Downloads/GoogleMaps-iOS-1.9.1/GoogleMaps.framework"; sourceTree = "<group>"; };
 		891583DE1A7C97CC00E21648 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		891583E01A7C97F000E21648 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		891583E21A7C97F900E21648 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -86,6 +94,7 @@
 				891583E51A7C980100E21648 /* CFNetwork.framework in Frameworks */,
 				891583E31A7C97F900E21648 /* libc++.dylib in Frameworks */,
 				891583E11A7C97F000E21648 /* libicucore.dylib in Frameworks */,
+				749109C11A7CD70500C2D332 /* GoogleMaps.framework in Frameworks */,
 				891583DF1A7C97CC00E21648 /* Firebase.framework in Frameworks */,
 				749109B31A7CCB4400C2D332 /* GeoFire.framework in Frameworks */,
 			);
@@ -101,9 +110,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		749109B81A7CCFE800C2D332 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89551FBF1A7C35C500F50FF0 /* RootViewController.swift */,
+				891583EF1A7CA33300E21648 /* RegisterViewController.swift */,
+				891583ED1A7CA1D300E21648 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		749109B91A7CD03800C2D332 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				749109BA1A7CD32400C2D332 /* GoogleDataProvider.swift */,
+				749109BB1A7CD32400C2D332 /* GooglePlace.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		89551FAF1A7C35C500F50FF0 = {
 			isa = PBXGroup;
 			children = (
+				749109C01A7CD70500C2D332 /* GoogleMaps.framework */,
+				749109B61A7CCF5400C2D332 /* MapVIewController.swift */,
 				749109B21A7CCB4400C2D332 /* GeoFire.framework */,
 				749109B01A7CCB0F00C2D332 /* CoreLocation.framework */,
 				891583E81A7C981400E21648 /* SystemConfiguration.framework */,
@@ -130,6 +160,10 @@
 		89551FBA1A7C35C500F50FF0 /* EventHype */ = {
 			isa = PBXGroup;
 			children = (
+				89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */,
+				89551FC11A7C35C500F50FF0 /* Main.storyboard */,
+				749109B81A7CCFE800C2D332 /* Controllers */,
+				749109B91A7CD03800C2D332 /* Model */,
 				891584011A7CC39D00E21648 /* Logo.png */,
 				891583FF1A7CBD9400E21648 /* loginbg.jpg */,
 				891583F11A7CA58000E21648 /* rootViewBG@2x.jpg */,
@@ -138,11 +172,6 @@
 				891583F41A7CA58000E21648 /* registerView@3x.jpg */,
 				891583F51A7CA58000E21648 /* 3 - Pcap0hn@2x.jpg */,
 				891583F61A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg */,
-				89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */,
-				89551FBF1A7C35C500F50FF0 /* RootViewController.swift */,
-				89551FC11A7C35C500F50FF0 /* Main.storyboard */,
-				891583EF1A7CA33300E21648 /* RegisterViewController.swift */,
-				891583ED1A7CA1D300E21648 /* LoginViewController.swift */,
 				89551FC41A7C35C500F50FF0 /* Images.xcassets */,
 				89551FC61A7C35C500F50FF0 /* LaunchScreen.xib */,
 				89551FBB1A7C35C500F50FF0 /* Supporting Files */,
@@ -285,9 +314,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				891583EE1A7CA1D300E21648 /* LoginViewController.swift in Sources */,
+				749109BC1A7CD32400C2D332 /* GoogleDataProvider.swift in Sources */,
 				89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */,
+				749109B71A7CCF5400C2D332 /* MapVIewController.swift in Sources */,
 				89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */,
 				891583F01A7CA33300E21648 /* RegisterViewController.swift in Sources */,
+				749109BD1A7CD32400C2D332 /* GooglePlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +447,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					/Users/Turbs/Downloads,
+					"/Users/Turbs/Downloads/GoogleMaps-iOS-1.9.1",
 				);
 				INFOPLIST_FILE = EventHype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -434,6 +467,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					/Users/Turbs/Downloads,
+					"/Users/Turbs/Downloads/GoogleMaps-iOS-1.9.1",
 				);
 				INFOPLIST_FILE = EventHype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
