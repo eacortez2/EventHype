@@ -21,7 +21,7 @@
 		891583FA1A7CA58000E21648 /* registerView@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 891583F41A7CA58000E21648 /* registerView@3x.jpg */; };
 		891583FB1A7CA58000E21648 /* 3 - Pcap0hn@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 891583F51A7CA58000E21648 /* 3 - Pcap0hn@2x.jpg */; };
 		891583FC1A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 891583F61A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg */; };
-		891583FE1A7CB62400E21648 /* MyCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891583FD1A7CB62400E21648 /* MyCustomTextField.swift */; };
+		891584001A7CBD9400E21648 /* loginbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 891583FF1A7CBD9400E21648 /* loginbg.jpg */; };
 		89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */; };
 		89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBF1A7C35C500F50FF0 /* RootViewController.swift */; };
 		89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89551FC11A7C35C500F50FF0 /* Main.storyboard */; };
@@ -56,7 +56,7 @@
 		891583F41A7CA58000E21648 /* registerView@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "registerView@3x.jpg"; sourceTree = "<group>"; };
 		891583F51A7CA58000E21648 /* 3 - Pcap0hn@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3 - Pcap0hn@2x.jpg"; sourceTree = "<group>"; };
 		891583F61A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3 - Pcap0hn@3x.jpg"; sourceTree = "<group>"; };
-		891583FD1A7CB62400E21648 /* MyCustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTextField.swift; sourceTree = "<group>"; };
+		891583FF1A7CBD9400E21648 /* loginbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginbg.jpg; sourceTree = "<group>"; };
 		89551FB81A7C35C500F50FF0 /* EventHype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89551FBC1A7C35C500F50FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +120,7 @@
 		89551FBA1A7C35C500F50FF0 /* EventHype */ = {
 			isa = PBXGroup;
 			children = (
+				891583FF1A7CBD9400E21648 /* loginbg.jpg */,
 				891583F11A7CA58000E21648 /* rootViewBG@2x.jpg */,
 				891583F21A7CA58000E21648 /* rootViewBG@3x.jpg */,
 				891583F31A7CA58000E21648 /* registerView@2x.jpg */,
@@ -131,7 +132,6 @@
 				89551FC11A7C35C500F50FF0 /* Main.storyboard */,
 				891583EF1A7CA33300E21648 /* RegisterViewController.swift */,
 				891583ED1A7CA1D300E21648 /* LoginViewController.swift */,
-				891583FD1A7CB62400E21648 /* MyCustomTextField.swift */,
 				89551FC41A7C35C500F50FF0 /* Images.xcassets */,
 				89551FC61A7C35C500F50FF0 /* LaunchScreen.xib */,
 				89551FBB1A7C35C500F50FF0 /* Supporting Files */,
@@ -247,6 +247,7 @@
 			files = (
 				89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */,
 				891583FA1A7CA58000E21648 /* registerView@3x.jpg in Resources */,
+				891584001A7CBD9400E21648 /* loginbg.jpg in Resources */,
 				89551FC81A7C35C500F50FF0 /* LaunchScreen.xib in Resources */,
 				891583F91A7CA58000E21648 /* registerView@2x.jpg in Resources */,
 				891583F81A7CA58000E21648 /* rootViewBG@3x.jpg in Resources */,
@@ -272,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				891583EE1A7CA1D300E21648 /* LoginViewController.swift in Sources */,
-				891583FE1A7CB62400E21648 /* MyCustomTextField.swift in Sources */,
 				89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */,
 				89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */,
 				891583F01A7CA33300E21648 /* RegisterViewController.swift in Sources */,

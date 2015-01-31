@@ -10,6 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var loginBGImage: UIImageView!
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -23,6 +24,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailTextField.text = ""
         emailTextField.delegate=self
         passwordTextField.delegate=self
+        var image = UIImage(named: "loginbg.jpg")
+        loginBGImage.image = image
+        emailTextField.textColor = UIColor.whiteColor()
+        passwordTextField.textColor = UIColor.whiteColor()
     }
     
     override func didReceiveMemoryWarning() {
