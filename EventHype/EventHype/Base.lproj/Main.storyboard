@@ -35,7 +35,7 @@
                     <navigationItem key="navigationItem" id="H5b-MS-pbO">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wCl-VF-UuE">
                             <connections>
-                                <segue destination="hn8-z7-0HE" kind="show" id="L0Z-Mw-zpm"/>
+                                <segue destination="hn8-z7-0HE" kind="show" id="kL7-UW-VCy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -163,12 +163,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="hcT-UH-YGg">
                                 <rect key="frame" x="16" y="79" width="338" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="xK1-rk-zLV">
-                                <rect key="frame" x="16" y="123" width="338" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-Im-5Jx">
                                 <rect key="frame" x="137" y="493" width="96" height="30"/>
@@ -176,7 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addEventPressed:" destination="hn8-z7-0HE" eventType="touchUpInside" id="6KR-lT-MCm"/>
+                                    <action selector="AddEventPressed:" destination="hn8-z7-0HE" eventType="touchUpInside" id="hMX-hd-NYC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecJ-Lp-X8A">
@@ -206,6 +201,11 @@
                                     <!--2015-01-31 19:55:26 +0000-->
                                 </date>
                             </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="xK1-rk-zLV">
+                                <rect key="frame" x="16" y="123" width="338" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -230,6 +230,12 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addressField" destination="xK1-rk-zLV" id="XnI-bX-tk3"/>
+                        <outlet property="datePicker" destination="QvX-qe-wbI" id="Q93-TL-0hV"/>
+                        <outlet property="eventNameField" destination="hcT-UH-YGg" id="9vb-d7-k0X"/>
+                        <outlet property="publicSwitch" destination="il1-Vy-1va" id="Fcp-pb-chI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXe-5f-7Q7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

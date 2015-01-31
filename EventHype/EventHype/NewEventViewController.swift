@@ -11,25 +11,58 @@ import UIKit
 
 class NewEventViewController: UIViewController{
     
+    var myRootRef = Firebase(url:"https://eventhype.firebaseio.com/events")
+    
+    @IBOutlet weak var eventNameField: UITextField!
+    @IBOutlet weak var addressField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var publicSwitch: UISwitch!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func AddEventPressed(sender: AnyObject) {
+        
+        
+        //grab date from the date picker
+        var chosenDate = self.datePicker.date
+        
+        //grab bool value from publicSwitch
+        var isPublic = self.publicSwitch.on
+        var setPublic = "true"
+        if !isPublic{
+            setPublic = "false"
+        }
+        
+        
+        //create a NSDateFormatter, but is doing nothing right now
+        var formatter = NSDateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy HH:mm" //temporary format
+        
+        let dateStringForDisplay = formatter.stringFromDate(chosenDate)
+        
+        //grab event name and address values
+        var eventName = eventNameField.text
+        var addressName = addressField.text
+        
+        //submitting information to firebase
+        
+        
+    
+        var event = ["event_name": eventName, "address": addressName, "event_date": dateStringForDisplay, "public": setPublic ]
+        var eventRef = myRootRef.childByAutoId()
+        eventRef.setValue(event)
+
         
     }
+    
+   
+
 
     
-    @IBAction func startDateBUtton(sender: UIButton) {
-        
-    }
-
     
-    @IBAction func addEventPressed(sender: AnyObject) {
-        
-        
-        ()}
-    
-    //random comment
     
 }
 
