@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NewEventViewController: UIViewController{
+class NewEventViewController: UIViewController, UITextFieldDelegate{
     
     var myRootRef = Firebase(url:"https://eventhype.firebaseio.com/events")
     
@@ -55,11 +55,22 @@ class NewEventViewController: UIViewController{
         var eventRef = myRootRef.childByAutoId()
         eventRef.setValue(event)
 
+        var notficationAlert = UIAlertController(title: "Event Successfully Created", message: "We were able to create your event!", preferredStyle: UIAlertControllerStyle.Alert)
         
+        notficationAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
+            notficationAlert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        self.presentViewController(notficationAlert, animated: true, completion: nil)
     }
     
    
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
 
     
     

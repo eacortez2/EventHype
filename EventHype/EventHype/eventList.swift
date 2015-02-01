@@ -14,6 +14,9 @@ class eventList: UITableViewController, UITableViewDataSource, UITableViewDelega
     var myRootRef = Firebase(url:"https://eventhype.firebaseio.com")
     
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.18, green: 0.83, blue: 0.89, alpha: 1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.topItem?.title = "My Events"
         eventList.dataSource=self
         eventList.delegate=self
         setUpFireBase()

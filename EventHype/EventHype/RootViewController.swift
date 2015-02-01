@@ -20,6 +20,9 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     var locationManager: CLLocationManager!
     
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.18, green: 0.83, blue: 0.89, alpha: 1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.topItem?.title = "Events"
         super.viewDidLoad()
         //myRootRef.unauth()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "registerView@2x.jpg")!)

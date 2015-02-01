@@ -35,6 +35,7 @@
 		8915841C1A7DC9A400E21648 /* LocationPinType2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915841B1A7DC9A400E21648 /* LocationPinType2.png */; };
 		8915841E1A7DCE2E00E21648 /* pinsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915841D1A7DCE2E00E21648 /* pinsmall.png */; };
 		891584201A7DCFA900E21648 /* pinsmallspaced.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915841F1A7DCFA900E21648 /* pinsmallspaced.png */; };
+		891584221A7DF02500E21648 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891584211A7DF02500E21648 /* TabBarViewController.swift */; };
 		89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */; };
 		89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBF1A7C35C500F50FF0 /* RootViewController.swift */; };
 		89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89551FC11A7C35C500F50FF0 /* Main.storyboard */; };
@@ -83,6 +84,7 @@
 		8915841B1A7DC9A400E21648 /* LocationPinType2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationPinType2.png; sourceTree = "<group>"; };
 		8915841D1A7DCE2E00E21648 /* pinsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinsmall.png; sourceTree = "<group>"; };
 		8915841F1A7DCFA900E21648 /* pinsmallspaced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinsmallspaced.png; sourceTree = "<group>"; };
+		891584211A7DF02500E21648 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		89551FB81A7C35C500F50FF0 /* EventHype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89551FBC1A7C35C500F50FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				89551FBF1A7C35C500F50FF0 /* RootViewController.swift */,
 				74BEAF5C1A7D84DC00FED9CF /* NewEventViewController.swift */,
 				89551FC11A7C35C500F50FF0 /* Main.storyboard */,
+				891584211A7DF02500E21648 /* TabBarViewController.swift */,
 				8915840B1A7D458C00E21648 /* eventList.swift */,
 				891583EF1A7CA33300E21648 /* RegisterViewController.swift */,
 				891583ED1A7CA1D300E21648 /* LoginViewController.swift */,
@@ -326,6 +329,7 @@
 				8915840C1A7D458C00E21648 /* eventList.swift in Sources */,
 				89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */,
 				89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */,
+				891584221A7DF02500E21648 /* TabBarViewController.swift in Sources */,
 				74BEAF5D1A7D84DC00FED9CF /* NewEventViewController.swift in Sources */,
 				891583F01A7CA33300E21648 /* RegisterViewController.swift in Sources */,
 			);
