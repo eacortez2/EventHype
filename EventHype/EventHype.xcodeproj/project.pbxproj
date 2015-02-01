@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		293CF9251A7DF61F002EFDDA /* arrowdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 293CF9231A7DF61F002EFDDA /* arrowdown.png */; };
+		293CF9261A7DF61F002EFDDA /* arrowup.png in Resources */ = {isa = PBXBuildFile; fileRef = 293CF9241A7DF61F002EFDDA /* arrowup.png */; };
+		293CF92E1A7DFA04002EFDDA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293CF92D1A7DFA04002EFDDA /* CommentCell.swift */; };
+		293CF9301A7DFB09002EFDDA /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293CF92F1A7DFB09002EFDDA /* Comment.swift */; };
+		293CF9321A7DFB4F002EFDDA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293CF9311A7DFB4F002EFDDA /* SwiftyJSON.swift */; };
+		293CF9341A7DFC0F002EFDDA /* MainThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293CF9331A7DFC0F002EFDDA /* MainThreadViewController.swift */; };
 		749109B11A7CCB0F00C2D332 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109B01A7CCB0F00C2D332 /* CoreLocation.framework */; };
 		74BEAF5D1A7D84DC00FED9CF /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BEAF5C1A7D84DC00FED9CF /* NewEventViewController.swift */; };
 		74C98CD41A7D33A3005E54D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C98CD31A7D33A3005E54D8 /* MapKit.framework */; };
@@ -36,6 +42,7 @@
 		8915841E1A7DCE2E00E21648 /* pinsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915841D1A7DCE2E00E21648 /* pinsmall.png */; };
 		891584201A7DCFA900E21648 /* pinsmallspaced.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915841F1A7DCFA900E21648 /* pinsmallspaced.png */; };
 		891584221A7DF02500E21648 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891584211A7DF02500E21648 /* TabBarViewController.swift */; };
+		891584241A7E1E8C00E21648 /* LogOutButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 891584231A7E1E8C00E21648 /* LogOutButton.png */; };
 		89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */; };
 		89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBF1A7C35C500F50FF0 /* RootViewController.swift */; };
 		89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89551FC11A7C35C500F50FF0 /* Main.storyboard */; };
@@ -55,6 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		293CF9231A7DF61F002EFDDA /* arrowdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowdown.png; sourceTree = "<group>"; };
+		293CF9241A7DF61F002EFDDA /* arrowup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowup.png; sourceTree = "<group>"; };
+		293CF92D1A7DFA04002EFDDA /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		293CF92F1A7DFB09002EFDDA /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		293CF9311A7DFB4F002EFDDA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		293CF9331A7DFC0F002EFDDA /* MainThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainThreadViewController.swift; sourceTree = "<group>"; };
 		749109B01A7CCB0F00C2D332 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		74BEAF5C1A7D84DC00FED9CF /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
 		74C98CD31A7D33A3005E54D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -85,6 +98,7 @@
 		8915841D1A7DCE2E00E21648 /* pinsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinsmall.png; sourceTree = "<group>"; };
 		8915841F1A7DCFA900E21648 /* pinsmallspaced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinsmallspaced.png; sourceTree = "<group>"; };
 		891584211A7DF02500E21648 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		891584231A7E1E8C00E21648 /* LogOutButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogOutButton.png; sourceTree = "<group>"; };
 		89551FB81A7C35C500F50FF0 /* EventHype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89551FBC1A7C35C500F50FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +168,7 @@
 		89551FBA1A7C35C500F50FF0 /* EventHype */ = {
 			isa = PBXGroup;
 			children = (
+				891584231A7E1E8C00E21648 /* LogOutButton.png */,
 				8915841F1A7DCFA900E21648 /* pinsmallspaced.png */,
 				8915841D1A7DCE2E00E21648 /* pinsmall.png */,
 				8915841B1A7DC9A400E21648 /* LocationPinType2.png */,
@@ -166,6 +181,8 @@
 				891583F11A7CA58000E21648 /* rootViewBG@2x.jpg */,
 				891583F21A7CA58000E21648 /* rootViewBG@3x.jpg */,
 				891583F31A7CA58000E21648 /* registerView@2x.jpg */,
+				293CF9231A7DF61F002EFDDA /* arrowdown.png */,
+				293CF9241A7DF61F002EFDDA /* arrowup.png */,
 				891583F41A7CA58000E21648 /* registerView@3x.jpg */,
 				891583F51A7CA58000E21648 /* 3 - Pcap0hn@2x.jpg */,
 				891583F61A7CA58000E21648 /* 3 - Pcap0hn@3x.jpg */,
@@ -180,6 +197,10 @@
 				89551FC41A7C35C500F50FF0 /* Images.xcassets */,
 				89551FC61A7C35C500F50FF0 /* LaunchScreen.xib */,
 				89551FBB1A7C35C500F50FF0 /* Supporting Files */,
+				293CF92D1A7DFA04002EFDDA /* CommentCell.swift */,
+				293CF9311A7DFB4F002EFDDA /* SwiftyJSON.swift */,
+				293CF92F1A7DFB09002EFDDA /* Comment.swift */,
+				293CF9331A7DFC0F002EFDDA /* MainThreadViewController.swift */,
 			);
 			path = EventHype;
 			sourceTree = "<group>";
@@ -291,11 +312,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8915841E1A7DCE2E00E21648 /* pinsmall.png in Resources */,
+				293CF9251A7DF61F002EFDDA /* arrowdown.png in Resources */,
 				89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */,
 				891583FA1A7CA58000E21648 /* registerView@3x.jpg in Resources */,
 				8915840E1A7D483000E21648 /* path7913.png in Resources */,
 				891584001A7CBD9400E21648 /* loginbg.jpg in Resources */,
+				293CF9261A7DF61F002EFDDA /* arrowup.png in Resources */,
 				89551FC81A7C35C500F50FF0 /* LaunchScreen.xib in Resources */,
+				891584241A7E1E8C00E21648 /* LogOutButton.png in Resources */,
 				891584101A7D48D800E21648 /* mapicon.png in Resources */,
 				8915841A1A7D7E7800E21648 /* newestTent28by35.png in Resources */,
 				891584021A7CC39D00E21648 /* Logo.png in Resources */,
@@ -327,11 +351,15 @@
 			files = (
 				891583EE1A7CA1D300E21648 /* LoginViewController.swift in Sources */,
 				8915840C1A7D458C00E21648 /* eventList.swift in Sources */,
+				293CF9341A7DFC0F002EFDDA /* MainThreadViewController.swift in Sources */,
 				89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */,
+				293CF9321A7DFB4F002EFDDA /* SwiftyJSON.swift in Sources */,
 				89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */,
 				891584221A7DF02500E21648 /* TabBarViewController.swift in Sources */,
 				74BEAF5D1A7D84DC00FED9CF /* NewEventViewController.swift in Sources */,
 				891583F01A7CA33300E21648 /* RegisterViewController.swift in Sources */,
+				293CF9301A7DFB09002EFDDA /* Comment.swift in Sources */,
+				293CF92E1A7DFA04002EFDDA /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
