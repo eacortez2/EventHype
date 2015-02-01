@@ -118,6 +118,8 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         
         if control == annotationView.rightCalloutAccessoryView {
             println("Disclosure Pressed! \(self.title)")
+            
+            
         }
     }
     
@@ -155,6 +157,13 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     class CustomPointAnnotation: MKPointAnnotation {
         var imageName: String!
     }
+    
+    
+    
+    
+    
+    
+
     
 }
 
