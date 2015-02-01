@@ -16,20 +16,21 @@ class eventList: UITableViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         eventList.dataSource=self
         eventList.delegate=self
-        
+        setUpFireBase()
     }
     
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        // Retrieve new posts as they are added to Firebase
+    func setUpFireBase(){
         myRootRef.observeEventType(.ChildAdded, withBlock: { snapshot in
             println("added -> \(snapshot.value)")
         })
-        // snapshot.childrenCount will always equal count since snapshot.value will include every FEventTypeChildAdded event
-        // triggered before this point.
         myRootRef.observeEventType(.Value, withBlock: { snapshot in
             
         })
+
+        
+    }
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        
         return 1
     }
     

@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 
 
-class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     var myRootRef = Firebase(url:"https://eventhype.firebaseio.com/events")
     let geoFire = GeoFire(firebaseRef: Firebase(url: "https://eventhype.firebaseio.com/events"))
     
@@ -43,6 +43,7 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
             
         }
         
+        var info2 = CustomPointAnnotation()
         
         //variables to control the starting zoom area
         var latDelta: CLLocationDegrees = 0.08
@@ -74,9 +75,10 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
                 if let placemark = placemarks?[0] as? CLPlacemark {
                     var location: CLLocation = placemark.location
                     var coord=CLLocationCoordinate2DMake(location.coordinate.latitude,location.coordinate.longitude)
-                    let annotation = MKPointAnnotation()
+                    let annotation =  CustomPointAnnotation()
                     annotation.setCoordinate(coord)
                     annotation.title=snapshot.value["event_name"] as String!
+                    annotation.imageName = "pinsmallspaced.png"
                     self.theMapView.addAnnotation(annotation)
                     //self.theMapView.addAnnotation(MKPlacemark(placemark: placemark))
                 }
@@ -107,6 +109,48 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     @IBAction func logoutButtonPressed(sender: UIButton) {
         myRootRef.unauth()
         self.performSegueWithIdentifier("gotoLogin", sender: self)
+    }
+    
+    func mapView(mapView: MKMapView!, annotationView: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+        if control == annotationView.rightCalloutAccessoryView {
+            println("Disclosure Pressed! \(self.title)")
+        }
+    }
+    
+    
+    
+    
+    
+    
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        if !(annotation is CustomPointAnnotation) {
+            return nil
+        }
+        
+        let reuseId = "test"
+        
+        var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId)
+        if anView == nil {
+            anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            anView.canShowCallout = true
+            anView.rightCalloutAccessoryView = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
+        }
+        else{
+            anView.annotation = annotation
+        }
+        
+        //Set annotation-specific properties **AFTER**
+        //the view is dequeued or created...
+        
+        let cpa = annotation as CustomPointAnnotation
+        anView.image = UIImage(named:cpa.imageName)
+        
+        return anView
+    }
+    
+    class CustomPointAnnotation: MKPointAnnotation {
+        var imageName: String!
     }
     
 }
