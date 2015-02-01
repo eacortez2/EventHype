@@ -62,7 +62,7 @@ class MainThreadViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as CommentCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("celltest", forIndexPath: indexPath) as CommentCell
         
         
         cell.messageText.text = messagesAry[messagesAry.count - indexPath.row - 1].text()

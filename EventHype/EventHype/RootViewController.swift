@@ -119,6 +119,8 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         if control == annotationView.rightCalloutAccessoryView {
             println("Disclosure Pressed! \(self.title)")
             
+            self.performSegueWithIdentifier("goToChat", sender: self)
+            
             
         }
     }
