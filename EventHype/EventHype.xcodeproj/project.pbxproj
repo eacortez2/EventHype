@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		293CF9211A7DF447002EFDDA /* arrowdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 293CF91F1A7DF447002EFDDA /* arrowdown.png */; };
+		293CF9221A7DF447002EFDDA /* arrowup.png in Resources */ = {isa = PBXBuildFile; fileRef = 293CF9201A7DF447002EFDDA /* arrowup.png */; };
 		749109B11A7CCB0F00C2D332 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749109B01A7CCB0F00C2D332 /* CoreLocation.framework */; };
 		74BEAF5D1A7D84DC00FED9CF /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BEAF5C1A7D84DC00FED9CF /* NewEventViewController.swift */; };
 		74C98CD41A7D33A3005E54D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C98CD31A7D33A3005E54D8 /* MapKit.framework */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		293CF91F1A7DF447002EFDDA /* arrowdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowdown.png; sourceTree = "<group>"; };
+		293CF9201A7DF447002EFDDA /* arrowup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowup.png; sourceTree = "<group>"; };
 		749109B01A7CCB0F00C2D332 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		74BEAF5C1A7D84DC00FED9CF /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
 		74C98CD31A7D33A3005E54D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -161,6 +165,8 @@
 				8915840F1A7D48D800E21648 /* mapicon.png */,
 				8915840D1A7D483000E21648 /* path7913.png */,
 				891584071A7D32CF00E21648 /* logobetter.png */,
+				293CF91F1A7DF447002EFDDA /* arrowdown.png */,
+				293CF9201A7DF447002EFDDA /* arrowup.png */,
 				891584011A7CC39D00E21648 /* Logo.png */,
 				891583FF1A7CBD9400E21648 /* loginbg.jpg */,
 				891583F11A7CA58000E21648 /* rootViewBG@2x.jpg */,
@@ -291,10 +297,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8915841E1A7DCE2E00E21648 /* pinsmall.png in Resources */,
+				293CF9211A7DF447002EFDDA /* arrowdown.png in Resources */,
 				89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */,
 				891583FA1A7CA58000E21648 /* registerView@3x.jpg in Resources */,
 				8915840E1A7D483000E21648 /* path7913.png in Resources */,
 				891584001A7CBD9400E21648 /* loginbg.jpg in Resources */,
+				293CF9221A7DF447002EFDDA /* arrowup.png in Resources */,
 				89551FC81A7C35C500F50FF0 /* LaunchScreen.xib in Resources */,
 				891584101A7D48D800E21648 /* mapicon.png in Resources */,
 				8915841A1A7D7E7800E21648 /* newestTent28by35.png in Resources */,
