@@ -18,11 +18,14 @@ class MainThreadViewController: UIViewController, UITableViewDelegate, UITableVi
     // DEALING WITH FIREBASE
     // Create a reference to a Firebase location
     var messagesRef = Firebase(url:"https://torid-fire-984.firebaseio.com/testchat")
+    //var messagesRef = Firebase(url:"https://eventhype.firebaseio.com/events")
     
+    var eventName: String = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("\(eventName)")
         // Do any additional setup after loading the view, typically from a nib.
         
         
@@ -74,7 +77,7 @@ class MainThreadViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        //write code here for doing comments to posts in the main feed
     }
     
     

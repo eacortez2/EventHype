@@ -42,6 +42,7 @@
 		8915841E1A7DCE2E00E21648 /* pinsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915841D1A7DCE2E00E21648 /* pinsmall.png */; };
 		891584201A7DCFA900E21648 /* pinsmallspaced.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915841F1A7DCFA900E21648 /* pinsmallspaced.png */; };
 		891584221A7DF02500E21648 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891584211A7DF02500E21648 /* TabBarViewController.swift */; };
+		891584241A7E1E8C00E21648 /* LogOutButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 891584231A7E1E8C00E21648 /* LogOutButton.png */; };
 		89551FBE1A7C35C500F50FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */; };
 		89551FC01A7C35C500F50FF0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551FBF1A7C35C500F50FF0 /* RootViewController.swift */; };
 		89551FC31A7C35C500F50FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89551FC11A7C35C500F50FF0 /* Main.storyboard */; };
@@ -97,6 +98,7 @@
 		8915841D1A7DCE2E00E21648 /* pinsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinsmall.png; sourceTree = "<group>"; };
 		8915841F1A7DCFA900E21648 /* pinsmallspaced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinsmallspaced.png; sourceTree = "<group>"; };
 		891584211A7DF02500E21648 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		891584231A7E1E8C00E21648 /* LogOutButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogOutButton.png; sourceTree = "<group>"; };
 		89551FB81A7C35C500F50FF0 /* EventHype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89551FBC1A7C35C500F50FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89551FBD1A7C35C500F50FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		89551FBA1A7C35C500F50FF0 /* EventHype */ = {
 			isa = PBXGroup;
 			children = (
+				891584231A7E1E8C00E21648 /* LogOutButton.png */,
 				8915841F1A7DCFA900E21648 /* pinsmallspaced.png */,
 				8915841D1A7DCE2E00E21648 /* pinsmall.png */,
 				8915841B1A7DC9A400E21648 /* LocationPinType2.png */,
@@ -316,6 +319,7 @@
 				891584001A7CBD9400E21648 /* loginbg.jpg in Resources */,
 				293CF9261A7DF61F002EFDDA /* arrowup.png in Resources */,
 				89551FC81A7C35C500F50FF0 /* LaunchScreen.xib in Resources */,
+				891584241A7E1E8C00E21648 /* LogOutButton.png in Resources */,
 				891584101A7D48D800E21648 /* mapicon.png in Resources */,
 				8915841A1A7D7E7800E21648 /* newestTent28by35.png in Resources */,
 				891584021A7CC39D00E21648 /* Logo.png in Resources */,

@@ -109,15 +109,11 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func logoutButtonPressed(sender: UIButton) {
-        myRootRef.unauth()
-        self.performSegueWithIdentifier("gotoLogin", sender: self)
-    }
-    
     func mapView(mapView: MKMapView!, annotationView: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
         if control == annotationView.rightCalloutAccessoryView {
             println("Disclosure Pressed! \(self.title)")
+             let eventName = annotationView.annotation.title!
             
             self.performSegueWithIdentifier("goToChat", sender: self)
             
@@ -125,6 +121,10 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         }
     }
     
+    @IBAction func logoutPressed(sender: UIBarButtonItem) {
+        myRootRef.unauth()
+        self.performSegueWithIdentifier("gotoLogin", sender: self)
+    }
     
     
     
@@ -159,13 +159,6 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     class CustomPointAnnotation: MKPointAnnotation {
         var imageName: String!
     }
-    
-    
-    
-    
-    
-    
-
     
 }
 
