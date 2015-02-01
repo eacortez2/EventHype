@@ -20,8 +20,6 @@ class NewEventViewController: UIViewController, UITextFieldDelegate{
     
     
     override func viewDidLoad() {
-        self.navigationController?.navigationBar.topItem?.title = "Create an Event"
-
         super.viewDidLoad()
     }
     
