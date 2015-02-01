@@ -12,8 +12,8 @@ import CoreLocation
 
 
 class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-    var myRootRef = Firebase(url:"https://eventhype.firebaseio.com")
-    let geoFire = GeoFire(firebaseRef: Firebase(url: "https://eventhype.firebaseio.com"))
+    var myRootRef = Firebase(url:"https://eventhype.firebaseio.com/events")
+    let geoFire = GeoFire(firebaseRef: Firebase(url: "https://eventhype.firebaseio.com/events"))
     
     
     @IBOutlet weak var theMapView: MKMapView!
@@ -57,15 +57,26 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         var theRegion: MKCoordinateRegion = MKCoordinateRegionMake(usersLocation, theSpan)
         
         self.theMapView.setRegion(theRegion, animated: true)
-//        myRootRef.observeEventType(.ChildAdded, withBlock: { snapshot in
-//            var lat: AnyObject? = snapshot.value.objectForKey("latitude")
-//            var lon: AnyObject? = snapshot.value.objectForKey("longitude")
-//            var location = CLLocationCoordinate2D(latitude: lat as Double, longitude: lon as Double)
-//            let annotation = MKPointAnnotation()
-//            annotation.setCoordinate(location)
-//            annotation.title = "test"
-//            self.theMapView.addAnnotation(annotation)
-    //})
+        
+        
+        //using Firebase to gather events data and map pins to the map
+        myRootRef.observeEventType(.ChildAdded, withBlock: { snapshot in
+
+            //grabbing event values from firebase
+            var address: AnyObject? = snapshot.value.objectForKey("address")
+            var eventName: AnyObject? = snapshot.value.objectForKey("event_name")
+            var eventDate: AnyObject? = snapshot.value.objectForKey("event_date");
+          
+            //placing the event on the map
+            var geocoder = CLGeocoder()
+            geocoder.geocodeAddressString(address as NSString, {(placemarks: [AnyObject]!, error: NSError!) -> Void in
+                if let placemark = placemarks?[0] as? CLPlacemark {
+                    
+                    self.theMapView.addAnnotation(MKPlacemark(placemark: placemark))
+                }
+            })
+    })
+
         
     }
     override func viewDidAppear(animated: Bool) {
