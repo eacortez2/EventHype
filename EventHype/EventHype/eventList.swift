@@ -12,8 +12,6 @@ class eventList: UITableViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var eventList: UITableView!
     var myRootRef = Firebase(url:"https://eventhype.firebaseio.com")
-    var numberRows: UInt = 0
-    
     
     override func viewDidLoad() {
         eventList.dataSource=self
@@ -23,23 +21,21 @@ class eventList: UITableViewController, UITableViewDataSource, UITableViewDelega
     
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        var count:UInt = 0
         // Retrieve new posts as they are added to Firebase
         myRootRef.observeEventType(.ChildAdded, withBlock: { snapshot in
-            count++
             println("added -> \(snapshot.value)")
         })
         // snapshot.childrenCount will always equal count since snapshot.value will include every FEventTypeChildAdded event
         // triggered before this point.
         myRootRef.observeEventType(.Value, withBlock: { snapshot in
-            println("initial data loaded! \(count == snapshot.childrenCount)")
+            
         })
-        return Int(count)
+        return 1
     }
     
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+    let cell = tableView.dequeueReusableCellWithIdentifier("eventNameCell", forIndexPath: indexPath) as UITableViewCell
         
         cell.textLabel?.text = String("test")
         

@@ -21,6 +21,7 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //myRootRef.unauth()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "registerView@2x.jpg")!)
         
         //getting the user's location
@@ -71,7 +72,13 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
             var geocoder = CLGeocoder()
             geocoder.geocodeAddressString(address as NSString, {(placemarks: [AnyObject]!, error: NSError!) -> Void in
                 if let placemark = placemarks?[0] as? CLPlacemark {
-                    self.theMapView.addAnnotation(MKPlacemark(placemark: placemark))
+                    var location: CLLocation = placemark.location
+                    var coord=CLLocationCoordinate2DMake(location.coordinate.latitude,location.coordinate.longitude)
+                    let annotation = MKPointAnnotation()
+                    annotation.setCoordinate(coord)
+                    annotation.title=snapshot.value["event_name"] as String!
+                    self.theMapView.addAnnotation(annotation)
+                    //self.theMapView.addAnnotation(MKPlacemark(placemark: placemark))
                 }
             })
     })
