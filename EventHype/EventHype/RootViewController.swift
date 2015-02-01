@@ -117,8 +117,8 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     func mapView(mapView: MKMapView!, annotationView: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
         if control == annotationView.rightCalloutAccessoryView {
-            println("Disclosure Pressed! \(self.title)")
-        }
+            
+            }
     }
     
     
