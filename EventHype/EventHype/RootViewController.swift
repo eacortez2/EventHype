@@ -71,7 +71,6 @@ class RootViewController: UIViewController, MKMapViewDelegate, CLLocationManager
             var geocoder = CLGeocoder()
             geocoder.geocodeAddressString(address as NSString, {(placemarks: [AnyObject]!, error: NSError!) -> Void in
                 if let placemark = placemarks?[0] as? CLPlacemark {
-                    
                     self.theMapView.addAnnotation(MKPlacemark(placemark: placemark))
                 }
             })

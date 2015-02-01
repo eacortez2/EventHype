@@ -16,22 +16,25 @@ class eventList: UITableViewController, UITableViewDataSource, UITableViewDelega
     
     
     override func viewDidLoad() {
-        //we need to pull the data from the firebase chat and figure out how many rows we need
-        myRootRef.observeEventType(.ChildAdded, withBlock: { snapshot in
-            self.numberRows=snapshot.childrenCount
-            println("\(self.numberRows)")
-        })
+        eventList.dataSource=self
+        eventList.delegate=self
+        
     }
     
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
-        return 1
-        
-    }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 5
+        var count:UInt = 0
+        // Retrieve new posts as they are added to Firebase
+        myRootRef.observeEventType(.ChildAdded, withBlock: { snapshot in
+            count++
+            println("added -> \(snapshot.value)")
+        })
+        // snapshot.childrenCount will always equal count since snapshot.value will include every FEventTypeChildAdded event
+        // triggered before this point.
+        myRootRef.observeEventType(.Value, withBlock: { snapshot in
+            println("initial data loaded! \(count == snapshot.childrenCount)")
+        })
+        return Int(count)
     }
     
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
